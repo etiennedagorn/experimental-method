@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Content | Experimental Analysis of Public Policies</title>
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Experimental Analysis of Public Policies</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="sessions.html" aria-current="page">Lectures & Readings</a>
+          <a href="homework.html">Homework</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Course Content</h1>
+      <p class="lead">Each session combines conceptual reasoning, empirical design, and a short base-R exercise. Use the links under each session to access slides, homework, theory practice, and code.</p>
+
+      <section id="refresher" class="session">
+        <div class="session-header"><h2>Identification Strategy and Independence Refresher</h2><span class="session-number">Required Refresher</span></div>
+       <p><strong>Question:</strong> What is causal inference?</p>
+       <p><strong>Concepts:</strong> causal effect, counterfactual, potential outcomes, identification, independence.</p>
+        
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/seance_0_econometric.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#refresher">View homework</a>
+          <a class="resource-link" href="downloads/homework/seance_0_econometric_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/seance_0_econometric_refresher.R" download>R script</a>
+        </div>
+        <div class="bibliography">
+         <p><strong>Recommended reading:</strong></p>
+          <ul>
+           <li>
+              Angrist, J. D., & Pischke, J.-S. (2010).
+              The credibility revolution in empirical economics: How better research design is taking the con out of econometrics.
+              <em>Journal of Economic Perspectives</em>, 24(2), 3–30.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="session-1" class="session">
+        <div class="session-header"><h2>Foundations of Policy Evaluation</h2><span class="session-number">Session 1</span></div>
+        <p><strong>Question:</strong> What exactly are we trying to learn when evaluating a policy?</p>
+        <p><strong>Concepts:</strong> causal question, treatment, outcome, population, time horizon, potential outcomes, estimand, selection bias, internal and external validity.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_01_foundations.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-1">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_01_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_01_foundations.R" download>R script</a>
+        </div>
+        <!-- Session 1: Foundations of Policy Evaluation -->
+       <div class="bibliography">
+        <p><strong>Recommended paper:</strong></p>
+       <ul>
+           <li>
+             LaLonde, R. J. (1986).
+             Evaluating the econometric evaluations of training programs with experimental data.
+             <em>American Economic Review</em>, 76(4), 604–620.
+           </li>
+         </ul>
+       </div>
+      </section>
+
+      <section id="session-2" class="session">
+        <div class="session-header"><h2>Selection Bias, Regression, Matching, and Inference</h2><span class="session-number">Session 2</span></div>
+        <p><strong>Question:</strong> Can conditioning on observables reconstruct the missing counterfactual?</p>
+        <p><strong>Concepts:</strong> naive comparisons, conditional independence, bad controls, propensity score, common support, balance diagnostics, clustered inference.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_02_03_merged.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-2">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_02_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_02_selection_matching.R" download>R script</a>
+        </div>
+        <!-- Session 2: Selection Bias, Regression, Matching, and Inference -->
+<div class="bibliography">
+  <p><strong>Recommended paper:</strong></p>
+  <ul>
+    <li>
+      Dehejia, R. H., & Wahba, S. (2002).
+      Propensity score-matching methods for nonexperimental causal studies.
+      <em>Review of Economics and Statistics</em>, 84(1), 151–161.
+    </li>
+  </ul>
+</div>
+      </section>
+
+      <section id="session-3" class="session">
+        <div class="session-header"><h2>Randomised Experiments: Design and Power</h2><span class="session-number">Session 3</span></div>
+        <p><strong>Question:</strong> What does randomisation solve, and what problems remain?</p>
+        <p><strong>Concepts:</strong> assignment mechanism, balance, implementation threats, minimum detectable effect, cluster design effect, experimental protocol.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_03_rct_design_power.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-3">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_03_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_03_rct_power.R" download>R script</a>
+        </div>
+        <!-- Session 3: Randomised Experiments: Design and Power -->
+<div class="bibliography">
+  <p><strong>Recommended paper:</strong></p>
+  <ul>
+    <li>
+      Miguel, E., & Kremer, M. (2004).
+      Worms: Identifying impacts on education and health in the presence of treatment externalities.
+      <em>Econometrica</em>, 72(1), 159–217.
+    </li>
+  </ul>
+</div>
+      </section>
+
+      <section id="session-4" class="session">
+        <div class="session-header"><h2>Compliance, IV, LATE, and External Validity</h2><span class="session-number">Session 4</span></div>
+        <p><strong>Question:</strong> Can exogenous variation in treatment identify effects when treatment is endogenous?</p>
+        <p><strong>Concepts:</strong> encouragement design, compliers, always-takers, never-takers, defiers, relevance, independence, exclusion, monotonicity, weak instruments, external validity.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_04_compliance_iv_late.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-4">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_04_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_04_iv_late.R" download>R script</a>
+        </div>
+        <!-- Session 4: Compliance, IV, LATE, and External Validity -->
+<div class="bibliography">
+  <p><strong>Recommended paper:</strong></p>
+  <ul>
+    <li>
+      Angrist, J. D. (1990).
+      Lifetime earnings and the Vietnam era draft lottery: Evidence from Social Security administrative records.
+      <em>American Economic Review</em>, 80(3), 313–336.
+    </li>
+  </ul>
+</div>
+      </section>
+
+      <section id="session-5" class="session">
+        <div class="session-header"><h2>Difference-in-Differences: 2x2 and TWFE</h2><span class="session-number">Session 5</span></div>
+        <p><strong>Question:</strong> Can untreated trends reveal the missing counterfactual trend?</p>
+        <p><strong>Concepts:</strong> before-after comparison, treated-control comparison, ATT in the post period, parallel trends, TWFE, serial correlation, clustering.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_05_did_twfe.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-5">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_05_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_05_did_twfe.R" download>R script</a>
+          <!-- Session 5: Difference-in-Differences: 2x2 and TWFE -->
+<div class="bibliography">
+  <p><strong>Recommended paper:</strong></p>
+  <ul>
+    <li>
+      Card, D., & Krueger, A. B. (1994).
+      Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania.
+      <em>American Economic Review</em>, 84(4), 772–793.
+    </li>
+  </ul>
+</div>
+        </div>
+      </section>
+
+      <section id="session-6" class="session">
+        <div class="session-header"><h2>Event Studies and Staggered DiD</h2><span class="session-number">Session 6</span></div>
+        <p><strong>Question:</strong> What changes when treatment timing and treatment effects are heterogeneous?</p>
+        <p><strong>Concepts:</strong> omitted period, dynamic effects, anticipation, weak support, never-treated and not-yet-treated controls, <code>ATT(g,t)</code>, aggregation.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_06_event_study_staggered.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-6">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_06_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_06_event_study_staggered.R" download>R script</a>
+        <!-- Session 6: Event Studies and Staggered DiD -->
+<div class="bibliography">
+  <p><strong>Recommended paper:</strong></p>
+  <ul>
+    <li>
+      Autor, D. H. (2003).
+      Outsourcing at will: The contribution of unjust dismissal doctrine to the growth of employment outsourcing.
+      <em>Journal of Labor Economics</em>, 21(1), 1–42.
+    </li>
+  </ul>
+</div>
+        </div>
+      </section>
+
+      <section id="session-7" class="session">
+        <div class="session-header"><h2>Regression Discontinuity</h2><span class="session-number">Session 7</span></div>
+        <p><strong>Question:</strong> Can an institutional threshold create a locally credible comparison?</p>
+        <p><strong>Concepts:</strong> running variable, cutoff, bandwidth, local linear regression, density checks, covariate continuity, placebo cutoffs, fuzzy RDD, local IV estimand.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_07_rdd.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-7">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_07_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_07_rdd.R" download>R script</a>
+          <!-- Session 7: Regression Discontinuity -->
+<div class="bibliography">
+  <p><strong>Recommended paper:</strong></p>
+  <ul>
+    <li>
+      Lee, D. S. (2008).
+      Randomized experiments from non-random selection in U.S. House elections.
+      <em>Journal of Econometrics</em>, 142(2), 675–697.
+    </li>
+  </ul>
+</div>
+        </div>
+      </section>
+
+      <section id="session-8" class="session">
+        <div class="session-header"><h2>Synthetic Control, Heterogeneity, and Replication</h2><span class="session-number">Session 8</span></div>
+        <p><strong>Question:</strong> How do we synthesise, interpret, and challenge causal evidence?</p>
+        <p><strong>Concepts:</strong> donor pool, predictors, weights, pre-treatment fit, treatment gap, placebo tests, heterogeneity, transport, robustness, replication audit.</p>
+        <div class="link-row">
+          <a class="resource-link" href="downloads/slides/session_08_scm_hte_replication.pdf">Slides PDF</a>
+          <a class="resource-link" href="homework.html#session-8">View homework</a>
+          <a class="resource-link" href="downloads/homework/session_08_optional_homework.md" download>Download .md</a>
+          <a class="resource-link" href="downloads/r_exercises/week_08_scm_hte_replication.R" download>R script</a>
+        <!-- Session 8: Synthetic Control, Heterogeneity, and Replication -->
+         <div class="bibliography">
+           <p><strong>Recommended paper:</strong></p>
+           <ul>
+             <li>
+               Abadie, A., Diamond, A., & Hainmueller, J. (2010).
+               Synthetic control methods for comparative case studies:
+               Estimating the effect of California's tobacco control program.
+               <em>Journal of the American Statistical Association</em>, 105(490), 493–505.
+             </li>
+           </ul>
+         </div>
+        </div>
+      </section>
+
+  </main>
+
+  </body>
+</html>

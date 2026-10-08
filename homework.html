@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework | Experimental Analysis of Public Policies</title>
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Experimental Analysis of Public Policies</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="sessions.html">Lectures & Readings</a>
+          <a href="homework.html" aria-current="page">Homework</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Homework</h1>
+      <p class="lead">Read each assignment on this page, inspect the starter R code below it, or download the Markdown file and R script. Homework is designed to reinforce causal reasoning: comparison, counterfactual, identifying variation, assumption, estimand, inference, and interpretation.</p>
+
+      <section aria-labelledby="homework-overview-title">
+        <h2 id="homework-overview-title">Overview</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Session</th>
+                <th>Slides</th>
+                <th>Read</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody id="homework-table">
+              <tr><td><strong>0:</strong><br>Identification Strategy and Independence</td><td><a href="downloads/slides/seance_0_econometric.pdf">Identification Strategy and Independence Refresher</a></td><td><a href="#refresher" data-load="refresher">View homework on page</a></td><td><a href="downloads/homework/seance_0_econometric_homework.md" download>seance_0_econometric_homework.md</a><br><a href="downloads/r_exercises/seance_0_econometric_refresher.R" download>seance_0_econometric_refresher.R</a></td></tr>
+              <tr><td><strong>Session 1</strong><br>Foundations of Policy Evaluation</td><td><a href="downloads/slides/session_01_foundations.pdf">Foundations of Policy Evaluation</a></td><td><a href="#session-1" data-load="session-1">View homework on page</a></td><td><a href="downloads/homework/session_01_homework.md" download>session_01_homework.md</a><br><a href="downloads/r_exercises/week_01_foundations.R" download>week_01_foundations.R</a></td></tr>
+              <tr><td><strong>Session 2</strong><br>Selection, Regression, Matching, and Inference</td><td><a href="downloads/slides/session_02_selection_regression_inference.pdf">Selection Bias, Regression, Matching, and Inference</a></td><td><a href="#session-2" data-load="session-2">View homework on page</a></td><td><a href="downloads/homework/session_02_homework.md" download>session_02_homework.md</a><br><a href="downloads/r_exercises/week_02_selection_matching.R" download>week_02_selection_matching.R</a></td></tr>
+              <tr><td><strong>Session 3</strong><br>Randomised Experiments, Design, and Power</td><td><a href="downloads/slides/session_03_rct_design_power.pdf">Randomised Experiments: Design and Power</a></td><td><a href="#session-3" data-load="session-3">View homework on page</a></td><td><a href="downloads/homework/session_03_homework.md" download>session_03_homework.md</a><br><a href="downloads/r_exercises/week_03_rct_power.R" download>week_03_rct_power.R</a></td></tr>
+              <tr><td><strong>Session 4</strong><br>Compliance, IV, LATE, and External Validity</td><td><a href="downloads/slides/session_04_compliance_iv_late.pdf">Compliance, IV, LATE, and External Validity</a></td><td><a href="#session-4" data-load="session-4">View homework on page</a></td><td><a href="downloads/homework/session_04_homework.md" download>session_04_homework.md</a><br><a href="downloads/r_exercises/week_04_iv_late.R" download>week_04_iv_late.R</a></td></tr>
+              <tr><td><strong>Session 5</strong><br>Difference-in-Differences and Simple TWFE</td><td><a href="downloads/slides/session_05_did_twfe.pdf">Difference-in-Differences: 2x2 and TWFE</a></td><td><a href="#session-5" data-load="session-5">View homework on page</a></td><td><a href="downloads/homework/session_05_homework.md" download>session_05_homework.md</a><br><a href="downloads/r_exercises/week_05_did_twfe.R" download>week_05_did_twfe.R</a></td></tr>
+              <tr><td><strong>Session 6</strong><br>Event Studies and Staggered DiD</td><td><a href="downloads/slides/session_06_event_study_staggered.pdf">Event Studies and Staggered DiD</a></td><td><a href="#session-6" data-load="session-6">View homework on page</a></td><td><a href="downloads/homework/session_06_homework.md" download>session_06_homework.md</a><br><a href="downloads/r_exercises/week_06_event_study_staggered.R" download>week_06_event_study_staggered.R</a></td></tr>
+              <tr><td><strong>Session 7</strong><br>Regression Discontinuity</td><td><a href="downloads/slides/session_07_rdd.pdf">Regression Discontinuity</a></td><td><a href="#session-7" data-load="session-7">View homework on page</a></td><td><a href="downloads/homework/session_07_homework.md" download>session_07_homework.md</a><br><a href="downloads/r_exercises/week_07_rdd.R" download>week_07_rdd.R</a></td></tr>
+              <tr><td><strong>Session 8</strong><br>Synthesis, SCM, Heterogeneity, and Replication</td><td><a href="downloads/slides/session_08_scm_hte_replication.pdf">Synthesis, SCM, Heterogeneity, and Replication</a></td><td><a href="#session-8" data-load="session-8">View homework on page</a></td><td><a href="downloads/homework/session_08_optional_homework.md" download>session_08_optional_homework.md</a><br><a href="downloads/r_exercises/week_08_scm_hte_replication.R" download>week_08_scm_hte_replication.R</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+ 
+      <section id="assignment-viewer" aria-labelledby="viewer-title">
+        <h2 id="viewer-title">Read the Assignment</h2>
+        <div class="homework-layout">
+          <aside class="assignment-picker" aria-label="Homework list" id="assignment-picker"></aside>
+          <article class="markdown-body" id="assignment-content" aria-live="polite">
+            <p>Loading homework...</p>
+          </article>
+        </div>
+        <noscript>
+          <div class="callout warning">
+            <p>Enable JavaScript to read the rendered homework on this page. The Markdown and R download links in the table above remain available.</p>
+          </div>
+        </noscript>
+      </section>
+    </main>
+
+
+    <script>
+      const assignments = [
+        {
+          id: "refresher",
+          label: "Refresher",
+          title: "Identification Strategy and Independence",
+          status: "Required",
+          slides: "downloads/slides/seance_0_econometric.pdf",
+          md: "downloads/homework/seance_0_econometric_homework.md",
+          r: "downloads/r_exercises/seance_0_econometric_refresher.R"
+        },
+        {
+          id: "session-1",
+          label: "Session 1",
+          title: "Foundations of Policy Evaluation",
+          status: "Required",
+          slides: "downloads/slides/session_01_foundations.pdf",
+          md: "downloads/homework/session_01_homework.md",
+          r: "downloads/r_exercises/week_01_foundations.R"
+        },
+        {
+          id: "session-2",
+          label: "Session 2",
+          title: "Selection, Regression, Matching, and Inference",
+          status: "Required",
+          slides: "downloads/slides/session_02_selection_regression_inference.pdf",
+          md: "downloads/homework/session_02_homework.md",
+          r: "downloads/r_exercises/week_02_selection_matching.R"
+        },
+        {
+          id: "session-3",
+          label: "Session 3",
+          title: "Randomised Experiments, Design, and Power",
+          status: "Required",
+          slides: "downloads/slides/session_03_rct_design_power.pdf",
+          md: "downloads/homework/session_03_homework.md",
+          r: "downloads/r_exercises/week_03_rct_power.R"
+        },
+        {
+          id: "session-4",
+          label: "Session 4",
+          title: "Compliance, IV, LATE, and External Validity",
+          status: "Required",
+          slides: "downloads/slides/session_04_compliance_iv_late.pdf",
+          md: "downloads/homework/session_04_homework.md",
+          r: "downloads/r_exercises/week_04_iv_late.R"
+        },
+        {
+          id: "session-5",
+          label: "Session 5",
+          title: "Difference-in-Differences and Simple TWFE",
+          status: "Required",
+          slides: "downloads/slides/session_05_did_twfe.pdf",
+          md: "downloads/homework/session_05_homework.md",
+          r: "downloads/r_exercises/week_05_did_twfe.R"
+        },
+        {
+          id: "session-6",
+          label: "Session 6",
+          title: "Event Studies and Staggered DiD",
+          status: "Required",
+          slides: "downloads/slides/session_06_event_study_staggered.pdf",
+          md: "downloads/homework/session_06_homework.md",
+          r: "downloads/r_exercises/week_06_event_study_staggered.R"
+        },
+        {
+          id: "session-7",
+          label: "Session 7",
+          title: "Regression Discontinuity",
+          status: "Required",
+          slides: "downloads/slides/session_07_rdd.pdf",
+          md: "downloads/homework/session_07_homework.md",
+          r: "downloads/r_exercises/week_07_rdd.R"
+        },
+        {
+          id: "session-8",
+          label: "Session 8",
+          title: "Synthesis, SCM, Heterogeneity, and Replication",
+          status: "Optional capstone",
+          slides: "downloads/slides/session_08_scm_hte_replication.pdf",
+          md: "downloads/homework/session_08_optional_homework.md",
+          r: "downloads/r_exercises/week_08_scm_hte_replication.R"
+        }
+      ];
+
+      const tableBody = document.getElementById("homework-table");
+      const picker = document.getElementById("assignment-picker");
+      const content = document.getElementById("assignment-content");
+      const assignmentViewer = document.getElementById("assignment-viewer");
+
+      function fileName(path) {
+        return path.split("/").pop();
+      }
+
+      function renderControls(item) {
+        return `
+          <div class="link-row">
+            <a class="resource-link" href="${item.slides}">Slides PDF</a>
+            <a class="resource-link" href="${item.md}" download>Download .md</a>
+            <a class="resource-link" href="${item.r}" download>Download .R</a>
+          </div>
+        `;
+      }
+
+      function renderRCode(item, code) {
+        return `
+          <section class="r-code-panel" aria-labelledby="${item.id}-r-code-title">
+            <h2 id="${item.id}-r-code-title">Starter R Code</h2>
+            <p>The same starter code is available as a downloadable <code>.R</code> file. Complete the commented TODO lines in your own copy before writing up numerical answers.</p>
+            <pre><code class="language-r">${escapeHtml(code)}</code></pre>
+          </section>
+        `;
+      }
+
+      function buildIndex() {
+        tableBody.innerHTML = assignments.map(item => `
+          <tr>
+            <td><strong>${item.label}</strong><br>${item.title}</td>
+            <td><a href="${item.slides}">${item.title}</a></td>
+            <td><a href="#${item.id}" data-load="${item.id}">View homework on page</a></td>
+            <td><a href="${item.md}" download>${fileName(item.md)}</a><br><a href="${item.r}" download>${fileName(item.r)}</a></td>
+          </tr>
+        `).join("");
+
+        picker.innerHTML = assignments.map(item => `
+          <button class="assignment-button" type="button" data-load="${item.id}">
+            <span>${item.label}</span>
+            <small>${item.title}</small>
+          </button>
+        `).join("");
+
+        document.querySelectorAll("[data-load]").forEach(element => {
+          element.addEventListener("click", event => {
+            event.preventDefault();
+            loadAssignment(element.getAttribute("data-load"), true);
+          });
+        });
+      }
+
+      function escapeHtml(value) {
+        return value
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      function inlineMarkdown(value) {
+        return escapeHtml(value)
+          .replace(/`([^`]+)`/g, (match, codeValue) => {
+            if (/^r_exercises\/[A-Za-z0-9_.-]+\.R$/.test(codeValue)) {
+              return `<a class="inline-file-link" href="downloads/${codeValue}" download><code>${codeValue}</code></a>`;
+            }
+            return `<code>${codeValue}</code>`;
+          })
+          .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+          .replace(/\*([^*]+)\*/g, "<em>$1</em>");
+      }
+
+      function isTableStart(lines, index) {
+        return lines[index] && lines[index].includes("|") &&
+          lines[index + 1] && /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(lines[index + 1]);
+      }
+
+      function splitTableRow(line) {
+        return line.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(cell => cell.trim());
+      }
+
+      function renderTable(lines, start) {
+        const headers = splitTableRow(lines[start]);
+        let index = start + 2;
+        const rows = [];
+        while (index < lines.length && lines[index].includes("|") && lines[index].trim() !== "") {
+          rows.push(splitTableRow(lines[index]));
+          index += 1;
+        }
+        const head = headers.map(cell => `<th>${inlineMarkdown(cell)}</th>`).join("");
+        const body = rows.map(row => `<tr>${row.map(cell => `<td>${inlineMarkdown(cell)}</td>`).join("")}</tr>`).join("");
+        return {
+          html: `<div class="table-wrap"><table class="markdown-table"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`,
+          next: index
+        };
+      }
+
+      function renderList(lines, start, ordered) {
+        const tag = ordered ? "ol" : "ul";
+        const regex = ordered ? /^\s*\d+\.\s+(.*)$/ : /^\s*-\s+(.*)$/;
+        let index = start;
+        const items = [];
+        while (index < lines.length) {
+          if (regex.test(lines[index])) {
+            items.push(lines[index].replace(regex, "$1"));
+            index += 1;
+            continue;
+          }
+          if (
+            lines[index].trim() === "" &&
+            index + 1 < lines.length &&
+            regex.test(lines[index + 1])
+          ) {
+            index += 1;
+            continue;
+          }
+          break;
+        }
+        return {
+          html: `<${tag}>${items.map(item => `<li>${inlineMarkdown(item)}</li>`).join("")}</${tag}>`,
+          next: index
+        };
+      }
+
+      function renderMarkdown(markdown) {
+        const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+        let html = "";
+        let index = 0;
+
+        while (index < lines.length) {
+          const line = lines[index];
+          const trimmed = line.trim();
+
+          if (trimmed === "") {
+            index += 1;
+            continue;
+          }
+
+          if (trimmed.startsWith("```")) {
+            const language = trimmed.slice(3).trim();
+            index += 1;
+            const code = [];
+            while (index < lines.length && !lines[index].trim().startsWith("```")) {
+              code.push(lines[index]);
+              index += 1;
+            }
+            index += 1;
+            html += `<pre><code class="language-${language}">${escapeHtml(code.join("\n"))}</code></pre>`;
+            continue;
+          }
+
+          if (isTableStart(lines, index)) {
+            const table = renderTable(lines, index);
+            html += table.html;
+            index = table.next;
+            continue;
+          }
+
+          if (/^###\s+/.test(trimmed)) {
+            html += `<h3>${inlineMarkdown(trimmed.replace(/^###\s+/, ""))}</h3>`;
+            index += 1;
+            continue;
+          }
+
+          if (/^##\s+/.test(trimmed)) {
+            html += `<h2>${inlineMarkdown(trimmed.replace(/^##\s+/, ""))}</h2>`;
+            index += 1;
+            continue;
+          }
+
+          if (/^#\s+/.test(trimmed)) {
+            html += `<h1>${inlineMarkdown(trimmed.replace(/^#\s+/, ""))}</h1>`;
+            index += 1;
+            continue;
+          }
+
+          if (/^\s*\d+\.\s+/.test(line)) {
+            const list = renderList(lines, index, true);
+            html += list.html;
+            index = list.next;
+            continue;
+          }
+
+          if (/^\s*-\s+/.test(line)) {
+            const list = renderList(lines, index, false);
+            html += list.html;
+            index = list.next;
+            continue;
+          }
+
+          const paragraph = [trimmed];
+          index += 1;
+          while (
+            index < lines.length &&
+            lines[index].trim() !== "" &&
+            !lines[index].trim().startsWith("```") &&
+            !/^#{1,3}\s+/.test(lines[index].trim()) &&
+            !/^\s*\d+\.\s+/.test(lines[index]) &&
+            !/^\s*-\s+/.test(lines[index]) &&
+            !isTableStart(lines, index)
+          ) {
+            paragraph.push(lines[index].trim());
+            index += 1;
+          }
+          html += `<p>${inlineMarkdown(paragraph.join(" "))}</p>`;
+        }
+
+        return html;
+      }
+
+      function scrollToAssignment() {
+        assignmentViewer.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      async function loadAssignment(id, shouldScroll = false) {
+        const item = assignments.find(candidate => candidate.id === id) || assignments[0];
+        document.querySelectorAll(".assignment-button").forEach(button => {
+          button.toggleAttribute("aria-current", button.getAttribute("data-load") === item.id);
+        });
+        history.replaceState(null, "", `#${item.id}`);
+        content.innerHTML = `<p>Loading ${item.label}...</p>`;
+        try {
+          const [response, rResponse] = await Promise.all([
+            fetch(item.md),
+            fetch(item.r)
+          ]);
+          if (!response.ok) {
+            throw new Error(`Could not load ${item.md}`);
+          }
+          if (!rResponse.ok) {
+            throw new Error(`Could not load ${item.r}`);
+          }
+          const markdown = await response.text();
+          const rCode = await rResponse.text();
+          content.innerHTML = renderControls(item) + renderMarkdown(markdown) + renderRCode(item, rCode);
+          if (shouldScroll) {
+            requestAnimationFrame(scrollToAssignment);
+          }
+        } catch (error) {
+          content.innerHTML = `<div class="callout warning"><p>${escapeHtml(error.message)}</p><p><a href="${item.md}">Open the Markdown file directly</a>.</p></div>`;
+          if (shouldScroll) {
+            requestAnimationFrame(scrollToAssignment);
+          }
+        }
+      }
+
+      buildIndex();
+      const initialId = location.hash.replace("#", "") || assignments[0].id;
+      loadAssignment(initialId, Boolean(location.hash));
+    </script>
+  </body>
+</html>
