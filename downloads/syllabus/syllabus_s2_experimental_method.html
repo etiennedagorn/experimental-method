@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Syllabus: Experimental Analysis of Public Policies</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11pt;
+      line-height: 1.35;
+      color: #111111;
+      margin: clamp(18px, 4vw, 48px);
+    }
+    h1 {
+      font-size: 20pt;
+      margin-bottom: 18px;
+    }
+    h2 {
+      font-size: 15pt;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 12.5pt;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+    p {
+      margin: 6px 0 10px;
+    }
+    ul {
+      margin-top: 4px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    th, td {
+      border: 1px solid #777777;
+      padding: 6px 8px;
+      vertical-align: top;
+    }
+    th {
+      background: #f2f2f2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Course Syllabus: Experimental Analysis of Public Policies</h1>
+
+  <p><strong>Course title:</strong> Experimental Analysis of Public Policies</p>
+  <p><strong>Semester/Year:</strong> Spring semester (S2), 2026-2027; Master IE M1</p>
+  <p><strong>Instructor name:</strong> Etienne Dagorn</p>
+  <p><strong>Email:</strong> etienne.dagorn@univ-lille.fr</p>
+
+  <h2>Summary</h2>
+  <p>This course provides a rigorous introduction to the experimental and quasi-experimental analysis of public policies, with a strong emphasis on applied reasoning. Students learn how to move from a policy question to a credible evaluation design by identifying the missing counterfactual, the source of identifying variation, the assumption that makes the comparison causal, and the estimand or population described by the result.</p>
+  <p>Each session combines:</p>
+  <ul>
+    <li>a collaborative group exercise in which students design, diagnose, or critique an evaluation protocol for a real-world policy intervention;</li>
+    <li>a theoretical deep dive into the econometric method needed for that evaluation;</li>
+    <li>a short empirical or R-based component focused on interpretation rather than programming.</li>
+  </ul>
+  <p>The course covers randomised controlled trials, selection-on-observables strategies, instrumental variables, difference-in-differences, event studies, regression discontinuity, synthetic control, treatment-effect heterogeneity, external validity, and replication.</p>
+
+  <h2>Prerequisites</h2>
+  <p>Students are expected to have prior knowledge of:</p>
+  <ul>
+    <li>basic concepts in descriptive and inferential statistics;</li>
+    <li>introductory econometrics, including linear regression and hypothesis testing;</li>
+    <li>basic familiarity with statistical software such as R or Stata.</li>
+  </ul>
+
+  <h2>Learning Outcomes</h2>
+  <p>By the end of this course, students will be able to:</p>
+  <ul>
+    <li>formulate a causal policy-evaluation question and define the relevant treatment, outcome, population, and estimand;</li>
+    <li>distinguish description, prediction, estimation, inference, and causal identification;</li>
+    <li>explain the missing counterfactual and the selection problem in potential-outcomes terms;</li>
+    <li>design and assess randomised evaluations, including issues of power, attrition, spillovers, and non-compliance;</li>
+    <li>apply core quasi-experimental methods, including matching, instrumental variables, difference-in-differences, event studies, regression discontinuity, and synthetic control;</li>
+    <li>interpret local estimands such as ATT, LATE, and cutoff-specific RDD effects;</li>
+    <li>diagnose threats to credibility without treating diagnostics as proof of identification;</li>
+    <li>implement short empirical exercises in R and communicate results to technical and non-technical audiences.</li>
+  </ul>
+
+  <h2>Programme</h2>
+
+  <h3>Session 1. Foundations of Policy Evaluation</h3>
+  <ul>
+    <li><strong>Group work:</strong> turn a local education or tutoring policy into a complete evaluation question.</li>
+    <li><strong>Theory:</strong> causal questions, potential outcomes, estimands, the missing counterfactual, selection bias, and the experimental benchmark.</li>
+    <li><strong>Applied focus:</strong> distinguishing the treatment effect of interest from a naive comparison.</li>
+  </ul>
+
+  <h3>Session 2. Selection Bias, Regression, Matching, and Inference</h3>
+  <ul>
+    <li><strong>Group work:</strong> design and critique an observational evaluation of an employment or job-search programme.</li>
+    <li><strong>Theory:</strong> naive comparisons, omitted-variable bias, regression as conditional comparison, bad controls, matching, propensity scores, common support, balance, and clustering.</li>
+    <li><strong>Applied focus:</strong> asking when conditioning on observables can reconstruct the missing counterfactual.</li>
+  </ul>
+
+  <h3>Session 3. Randomised Experiments: Design and Power</h3>
+  <ul>
+    <li><strong>Group work:</strong> develop an RCT protocol for an education, health, or social-policy intervention.</li>
+    <li><strong>Theory:</strong> assignment mechanisms, simple randomisation, stratification, blocking, cluster randomisation, balance, spillovers, attrition, outcome measurement, statistical power, and minimum detectable effects.</li>
+    <li><strong>Applied focus:</strong> linking design choices to precision, feasibility, and interpretation.</li>
+  </ul>
+
+  <h3>Session 4. Compliance, IV, LATE, and External Validity</h3>
+  <ul>
+    <li><strong>Group work:</strong> analyse an encouragement design where assignment and treatment receipt differ.</li>
+    <li><strong>Theory:</strong> assignment Z versus treatment D, intention-to-treat, first stage, Wald estimator, local average treatment effects, IV assumptions, weak instruments, exclusion threats, and scale-up.</li>
+    <li><strong>Applied focus:</strong> identifying who is moved by an instrument and what population the estimate describes.</li>
+  </ul>
+
+  <h3>Session 5. Difference-in-Differences: 2x2 and TWFE</h3>
+  <ul>
+    <li><strong>Group work:</strong> construct a DiD evaluation for a labour-market or regional policy.</li>
+    <li><strong>Theory:</strong> before-after and treated-control comparisons, the 2x2 DiD estimator, graphical counterfactuals, parallel trends, simple two-way fixed effects, controls, serial correlation, and clustered inference.</li>
+    <li><strong>Applied focus:</strong> using untreated trends to reason about the missing counterfactual trend.</li>
+  </ul>
+
+  <h3>Session 6. Event Studies and Staggered Difference-in-Differences</h3>
+  <ul>
+    <li><strong>Group work:</strong> read and diagnose an event-study graph from a staggered policy rollout.</li>
+    <li><strong>Theory:</strong> event time, leads and lags, dynamic effects, anticipation, pre-trend diagnostics, staggered adoption, comparison groups, heterogeneous effects, and group-time ATT.</li>
+    <li><strong>Applied focus:</strong> understanding why naive TWFE can mislead when treatment timing and effects vary.</li>
+  </ul>
+
+  <h3>Session 7. Regression Discontinuity</h3>
+  <ul>
+    <li><strong>Group work:</strong> audit an institutional threshold such as a scholarship rule, eligibility cutoff, or regulatory threshold.</li>
+    <li><strong>Theory:</strong> running variable, cutoff, sharp and fuzzy RDD, continuity, local counterfactuals, bandwidth choice, local linear regression, manipulation, density checks, covariate continuity, placebo cutoffs, and external validity.</li>
+    <li><strong>Applied focus:</strong> interpreting RDD estimates as local effects around a threshold.</li>
+  </ul>
+
+  <h3>Session 8. Synthetic Control, Heterogeneity, and Replication</h3>
+  <ul>
+    <li><strong>Group work:</strong> conduct a final evidence audit for a policy evaluation using the course design checklist.</li>
+    <li><strong>Theory:</strong> method choice, synthetic control, donor pools, predictor balance, pre-treatment fit, treatment gaps, placebo tests, donor sensitivity, heterogeneous treatment effects, external validity, robustness, and replication.</li>
+    <li><strong>Applied focus:</strong> synthesising, interpreting, and challenging causal evidence.</li>
+  </ul>
+
+  <h2>Course Format</h2>
+  <p>The course has 24 hours in total, organised as eight sessions of approximately three hours each. Sessions combine lectures, collaborative design exercises, short empirical interpretation tasks, and computer-based R exercises.</p>
+  <p>Weekly homework after Sessions 1-7 provides additional practice in causal reasoning and short R implementation. An optional Session 8 capstone homework is available for final revision. These exercises are designed to take approximately 45-75 minutes per week.</p>
+
+  <h2>Assessment</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Weight</th>
+        <th>Format</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>In-class online QCM quizzes</td>
+        <td>40%</td>
+        <td>Three short in-class online quizzes</td>
+      </tr>
+      <tr>
+        <td>Final written exam</td>
+        <td>60%</td>
+        <td>In-class written exam based on applied empirical-design scenarios</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The QCM quizzes assess core concepts and interpretation through short policy scenarios. The final exam asks students to reason through two or three empirical-design problems using the course structure: policy question, estimand, counterfactual, identifying variation, identifying assumption, main threat, inference, and interpretation.</p>
+
+  <h2>Recommended Resources</h2>
+  <p><strong>Introductory texts:</strong></p>
+  <ul>
+    <li>Angrist, Joshua D., and Jörn-Steffen Pischke. <em>Mostly Harmless Econometrics: An Empiricist's Companion</em>. Princeton University Press, 2009.</li>
+    <li>Cunningham, Scott. <em>Causal Inference: The Mixtape</em>. Yale University Press, 2021.</li>
+    <li>Gertler, Paul J., Sebastian Martinez, Patrick Premand, Laura B. Rawlings, and Christel M. J. Vermeersch. <em>Impact Evaluation in Practice</em>. World Bank, 2016.</li>
+  </ul>
+  <p><strong>Additional readings:</strong></p>
+  <ul>
+    <li>A selection of published articles and applied examples will be made available to students before or during the relevant sessions.</li>
+  </ul>
+</body>
+</html>

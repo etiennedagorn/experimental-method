@@ -21,7 +21,7 @@ The course uses two grades only:
 
 | Component | Weight | Format |
 | --- | ---: | --- |
-| In-class online QCM quizzes | 40% | One short quiz per session, best 6 of 8 retained |
+| In-class online QCM quizzes | 40% | Three short in-class online quizzes |
 | Final written exam | 60% | In-class exam based on applied empirical-design scenarios |
 
 ## Rationale

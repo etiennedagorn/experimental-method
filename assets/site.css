@@ -329,6 +329,7 @@ p {
   background: transparent;
   color: inherit;
   padding: 0;
+  overflow-wrap: normal;
 }
 
 .markdown-body code {
@@ -336,6 +337,7 @@ p {
   padding: 0.08rem 0.24rem;
   background: #eef2f7;
   color: #223047;
+  overflow-wrap: anywhere;
 }
 
 .inline-file-link {

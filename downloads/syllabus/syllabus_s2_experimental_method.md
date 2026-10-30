@@ -101,7 +101,7 @@ Weekly homework after Sessions 1-7 provides additional practice in causal reason
 
 | Component | Weight | Format |
 | --- | ---: | --- |
-| In-class online QCM quizzes | 40% | One short quiz per session; best 6 of 8 retained |
+| In-class online QCM quizzes | 40% | Three short in-class online quizzes |
 | Final written exam | 60% | In-class written exam based on applied empirical-design scenarios |
 
 The QCM quizzes assess core concepts and interpretation through short policy scenarios. The final exam asks students to reason through two or three empirical-design problems using the course structure: policy question, estimand, counterfactual, identifying variation, identifying assumption, main threat, inference, and interpretation.

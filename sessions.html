@@ -20,12 +20,18 @@
 
     <main>
       <h1>Course Content</h1>
-      <p class="lead">Each session combines conceptual reasoning, empirical design, and a short base-R exercise. Use the links under each session to access slides, homework, theory practice, and code.</p>
+      <p class="lead">Each session combines conceptual reasoning, empirical design, and a short base-R exercise. The topic numbers below follow the course programme. Use the combined teaching decks and the linked homework and R starters for each topic.</p>
+
+
+      <div class="callout">
+        <p><strong>Which slides should I use?</strong> Sessions 2–3 have a continuation deck, building on the selection and matching background linked under Session 2. Sessions 5–6 share one teaching deck, and Sessions 7–8 share another. Revised topic-specific decks for Sessions 5–8 are available as reference material.</p>
+        <p><a href="downloads/slides/introduction_slides.pdf">Course introduction</a> · <a href="#combined-practice">Practice after the combined classes</a></p>
+      </div>
 
       <section id="refresher" class="session">
-        <div class="session-header"><h2>Identification Strategy and Independence Refresher</h2><span class="session-number">Required Refresher</span></div>
-       <p><strong>Question:</strong> What is causal inference?</p>
-       <p><strong>Concepts:</strong> causal effect, counterfactual, potential outcomes, identification, independence.</p>
+        <div class="session-header"><h2>Econometric Refresher: Intuitions for Applied Work</h2><span class="session-number">Required Refresher</span></div>
+       <p><strong>Question:</strong> Which statistical ideas help us read an empirical evaluation?</p>
+       <p><strong>Concepts:</strong> distributions, expectations, conditional means, regression, sampling uncertainty, identification and independence.</p>
         
         <div class="link-row">
           <a class="resource-link" href="downloads/slides/seance_0_econometric.pdf">Slides PDF</a>
@@ -73,7 +79,8 @@
         <p><strong>Question:</strong> Can conditioning on observables reconstruct the missing counterfactual?</p>
         <p><strong>Concepts:</strong> naive comparisons, conditional independence, bad controls, propensity score, common support, balance diagnostics, clustered inference.</p>
         <div class="link-row">
-          <a class="resource-link" href="downloads/slides/session_02_03_merged.pdf">Slides PDF</a>
+          <a class="resource-link" href="downloads/slides/session_02_selection_regression_inference.pdf">Selection and matching background</a>
+          <a class="resource-link" href="downloads/slides/session_02_03_merged.pdf">Sessions 2–3 continuation</a>
           <a class="resource-link" href="homework.html#session-2">View homework</a>
           <a class="resource-link" href="downloads/homework/session_02_homework.md" download>Download .md</a>
           <a class="resource-link" href="downloads/r_exercises/week_02_selection_matching.R" download>R script</a>
@@ -96,7 +103,8 @@
         <p><strong>Question:</strong> What does randomisation solve, and what problems remain?</p>
         <p><strong>Concepts:</strong> assignment mechanism, balance, implementation threats, minimum detectable effect, cluster design effect, experimental protocol.</p>
         <div class="link-row">
-          <a class="resource-link" href="downloads/slides/session_03_rct_design_power.pdf">Slides PDF</a>
+          <a class="resource-link" href="downloads/slides/session_02_03_merged.pdf">Sessions 2–3 continuation</a>
+          <a class="resource-link" href="downloads/slides/session_03_rct_design_power.pdf">RCT reference slides</a>
           <a class="resource-link" href="homework.html#session-3">View homework</a>
           <a class="resource-link" href="downloads/homework/session_03_homework.md" download>Download .md</a>
           <a class="resource-link" href="downloads/r_exercises/week_03_rct_power.R" download>R script</a>
@@ -142,21 +150,14 @@
         <p><strong>Question:</strong> Can untreated trends reveal the missing counterfactual trend?</p>
         <p><strong>Concepts:</strong> before-after comparison, treated-control comparison, ATT in the post period, parallel trends, TWFE, serial correlation, clustering.</p>
         <div class="link-row">
-          <a class="resource-link" href="downloads/slides/session_05_did_twfe.pdf">Slides PDF</a>
+          <a class="resource-link" href="downloads/slides/session_05_06_merged.pdf">Combined teaching slides 5–6</a>
+          <a class="resource-link" href="downloads/slides/session_05_did_twfe.pdf">DiD reference slides</a>
           <a class="resource-link" href="homework.html#session-5">View homework</a>
           <a class="resource-link" href="downloads/homework/session_05_homework.md" download>Download .md</a>
           <a class="resource-link" href="downloads/r_exercises/week_05_did_twfe.R" download>R script</a>
-          <!-- Session 5: Difference-in-Differences: 2x2 and TWFE -->
-<div class="bibliography">
-  <p><strong>Recommended paper:</strong></p>
-  <ul>
-    <li>
-      Card, D., & Krueger, A. B. (1994).
-      Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania.
-      <em>American Economic Review</em>, 84(4), 772–793.
-    </li>
-  </ul>
-</div>
+        </div>
+        <div class="bibliography">
+          <p><strong>Recommended paper:</strong></p><ul><li>Card, D., and Krueger, A. B. (1994). Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania. <em>American Economic Review</em>, 84(4), 772–793. <a href="https://davidcard.berkeley.edu/papers/njmin-aer.pdf">Author-hosted paper</a>.</li></ul>
         </div>
       </section>
 
@@ -165,21 +166,14 @@
         <p><strong>Question:</strong> What changes when treatment timing and treatment effects are heterogeneous?</p>
         <p><strong>Concepts:</strong> omitted period, dynamic effects, anticipation, weak support, never-treated and not-yet-treated controls, <code>ATT(g,t)</code>, aggregation.</p>
         <div class="link-row">
-          <a class="resource-link" href="downloads/slides/session_06_event_study_staggered.pdf">Slides PDF</a>
+          <a class="resource-link" href="downloads/slides/session_05_06_merged.pdf">Combined teaching slides 5–6</a>
+          <a class="resource-link" href="downloads/slides/session_06_event_study_staggered.pdf">Event-study reference slides</a>
           <a class="resource-link" href="homework.html#session-6">View homework</a>
           <a class="resource-link" href="downloads/homework/session_06_homework.md" download>Download .md</a>
           <a class="resource-link" href="downloads/r_exercises/week_06_event_study_staggered.R" download>R script</a>
-        <!-- Session 6: Event Studies and Staggered DiD -->
-<div class="bibliography">
-  <p><strong>Recommended paper:</strong></p>
-  <ul>
-    <li>
-      Autor, D. H. (2003).
-      Outsourcing at will: The contribution of unjust dismissal doctrine to the growth of employment outsourcing.
-      <em>Journal of Labor Economics</em>, 21(1), 1–42.
-    </li>
-  </ul>
-</div>
+        </div>
+        <div class="bibliography">
+          <p><strong>Methodological readings:</strong></p><ul><li>Sun, L., and Abraham, S. (2021). Estimating dynamic treatment effects in event studies with heterogeneous treatment effects. <em>Journal of Econometrics</em>, 225(2), 175–199. <a href="https://arxiv.org/abs/1804.05785">Author manuscript</a>.</li><li>Callaway, B., and Sant’Anna, P. H. C. (2021). Difference-in-differences with multiple time periods. <em>Journal of Econometrics</em>, 225(2), 200–230. <a href="https://arxiv.org/abs/1803.09015">Author manuscript</a>.</li></ul>
         </div>
       </section>
 
@@ -188,21 +182,14 @@
         <p><strong>Question:</strong> Can an institutional threshold create a locally credible comparison?</p>
         <p><strong>Concepts:</strong> running variable, cutoff, bandwidth, local linear regression, density checks, covariate continuity, placebo cutoffs, fuzzy RDD, local IV estimand.</p>
         <div class="link-row">
-          <a class="resource-link" href="downloads/slides/session_07_rdd.pdf">Slides PDF</a>
+          <a class="resource-link" href="downloads/slides/session_07_08_merged.pdf">Combined teaching slides 7–8</a>
+          <a class="resource-link" href="downloads/slides/session_07_rdd.pdf">RDD reference slides</a>
           <a class="resource-link" href="homework.html#session-7">View homework</a>
           <a class="resource-link" href="downloads/homework/session_07_homework.md" download>Download .md</a>
           <a class="resource-link" href="downloads/r_exercises/week_07_rdd.R" download>R script</a>
-          <!-- Session 7: Regression Discontinuity -->
-<div class="bibliography">
-  <p><strong>Recommended paper:</strong></p>
-  <ul>
-    <li>
-      Lee, D. S. (2008).
-      Randomized experiments from non-random selection in U.S. House elections.
-      <em>Journal of Econometrics</em>, 142(2), 675–697.
-    </li>
-  </ul>
-</div>
+        </div>
+        <div class="bibliography">
+          <p><strong>Empirical applications:</strong></p><ul><li>Angrist, J. D., and Lavy, V. (1999). Using Maimonides’ rule to estimate the effect of class size on scholastic achievement. <em>Quarterly Journal of Economics</em>, 114(2), 533–575. <a href="https://cpi.stanford.edu/_media/pdf/Reference%20Media/Angrist%20and%20Lavy_1999_Education.pdf">University-hosted paper</a>.</li><li>Lee, D. S. (2008). Randomized experiments from non-random selection in U.S. House elections. <em>Journal of Econometrics</em>, 142(2), 675–697. <a href="https://www.princeton.edu/~davidlee/wp/RDrand.pdf">Author-hosted paper</a>. Optional close-election application.</li></ul>
         </div>
       </section>
 
@@ -211,26 +198,39 @@
         <p><strong>Question:</strong> How do we synthesise, interpret, and challenge causal evidence?</p>
         <p><strong>Concepts:</strong> donor pool, predictors, weights, pre-treatment fit, treatment gap, placebo tests, heterogeneity, transport, robustness, replication audit.</p>
         <div class="link-row">
-          <a class="resource-link" href="downloads/slides/session_08_scm_hte_replication.pdf">Slides PDF</a>
-          <a class="resource-link" href="homework.html#session-8">View homework</a>
+          <a class="resource-link" href="downloads/slides/session_07_08_merged.pdf">Combined teaching slides 7–8</a>
+          <a class="resource-link" href="downloads/slides/session_08_scm_hte_replication.pdf">SCM and synthesis reference slides</a>
+          <a class="resource-link" href="homework.html#session-8">View optional homework</a>
           <a class="resource-link" href="downloads/homework/session_08_optional_homework.md" download>Download .md</a>
           <a class="resource-link" href="downloads/r_exercises/week_08_scm_hte_replication.R" download>R script</a>
-        <!-- Session 8: Synthetic Control, Heterogeneity, and Replication -->
-         <div class="bibliography">
-           <p><strong>Recommended paper:</strong></p>
-           <ul>
-             <li>
-               Abadie, A., Diamond, A., & Hainmueller, J. (2010).
-               Synthetic control methods for comparative case studies:
-               Estimating the effect of California's tobacco control program.
-               <em>Journal of the American Statistical Association</em>, 105(490), 493–505.
-             </li>
-           </ul>
-         </div>
+        </div>
+        <div class="bibliography">
+          <p><strong>Recommended paper:</strong></p><ul><li>Abadie, A., Diamond, A., and Hainmueller, J. (2010). Synthetic control methods for comparative case studies: Estimating the effect of California’s tobacco control program. <em>Journal of the American Statistical Association</em>, 105(490), 493–505. <a href="https://economics.mit.edu/sites/default/files/publications/Synthetic%20Control%20Methods.pdf">Author-hosted paper</a>.</li></ul><p><strong>Replication case:</strong> <a href="https://eml.berkeley.edu/~jmccrary/mccrary2002.pdf">McCrary’s comment (2002)</a> and <a href="https://pricetheory.uchicago.edu/levitt/Papers/LevittUsingElectoralCycles2002.pdf">Levitt’s reply (2002)</a> on electoral-cycle instruments, police hiring and crime.</p>
+        </div>
+      </section>
+
+
+      <section id="combined-practice" aria-labelledby="combined-practice-title">
+        <h2 id="combined-practice-title">Practice After the Combined Classes</h2>
+        <p>Use one selected route after each combined class, rather than automatically completing two full homework sheets. Full sheets remain available for revision.</p>
+        <div class="grid two">
+          <article class="card">
+            <h3>After Sessions 5–6 · 55–70 minutes</h3>
+            <p>Session 5 conceptual questions 1, 3 and 4; Session 6 conceptual question 3 and the applied adoption-grid exercise. Add the Week 5 R contrast and a five-minute interpretation check.</p>
+            <div class="link-row"><a class="resource-link" href="homework.html#session-5">Session 5 practice</a><a class="resource-link" href="homework.html#session-6">Session 6 practice</a></div>
+          </article>
+          <article class="card">
+            <h3>After Sessions 7–8 · 55–75 minutes</h3>
+            <p>Session 7 conceptual questions 1, 3 and 5 and its applied threshold exercise; optional Session 8 conceptual question 2. Add the Week 7 R bandwidth and fuzzy-RDD calculations. The full Session 8 assignment remains optional.</p>
+            <div class="link-row"><a class="resource-link" href="homework.html#session-7">Session 7 practice</a><a class="resource-link" href="homework.html#session-8">Optional synthesis practice</a></div>
+          </article>
         </div>
       </section>
 
   </main>
 
+    <footer class="footer">
+      <div class="footer-inner">Course materials checked on <time datetime="2026-10-30">30 October 2026</time>. Use the combined teaching decks for Sessions 2–3, 5–6 and 7–8; topic-specific reference slides are listed in the lecture guide.</div>
+    </footer>
   </body>
 </html>
